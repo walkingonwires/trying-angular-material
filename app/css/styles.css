@@ -1,0 +1,33 @@
+.tile {
+  background-size: cover;
+  background-position: center; }
+
+.lightGray {
+  background-color: #f5f5f5; }
+
+.mint {
+  background: #b9f6ca; }
+
+.paleYellow {
+  background: #ffff8d; }
+
+.blue {
+  background: #448aff; }
+
+.seaFoamBlue {
+  background: #84ffff; }
+
+.skyBlue {
+  background: #80d8ff; }
+
+.purple {
+  background: #b388ff; }
+
+.lightPurple {
+  background: #8c9eff; }
+
+.salmon {
+  background: #ff8a80; }
+
+.pink {
+  background: #ff80ab; }

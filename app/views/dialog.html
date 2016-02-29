@@ -1,0 +1,35 @@
+<md-dialog aria-label="color dialog"  ng-cloak>
+	<form>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2>Choose A Color</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					<i class="material-icons">clear</i>
+				</md-button>
+			</div>
+		</md-toolbar>
+		<md-dialog-content>
+			<div class="md-dialog-content">
+				<h2>Choose a new Color</h2>
+				<md-input-container>
+					<label>Color</label>
+					<md-select ng-model="newColor">
+						<md-option ng-repeat="color in choices.colors" value="{{color}}">
+							{{color | lowercase}}
+						</md-option>
+					</md-select>
+				</md-input-container>
+			</div>
+		</md-dialog-content>
+		<md-dialog-actions layout="row">
+			<span flex></span>
+			<md-button ng-click="cancel()">
+				Cancel
+			</md-button>
+			<md-button ng-click="answer()" style="margin-right:20px;">
+				Save
+			</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bower_link/angular-material/angular-material.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Material Sample App</title>
+</head>
+<body ng-app="myApp" layout="column" flex>
+<md-toolbar ng-controller="menuController as menu" layout="row">
+	<md-menu class="menu">
+		<md-button aria-label="Open Menu" class="md-icon-button"
+				   ng-click="menu.openMenu($mdOpenMenu, $event)">
+			<i class="material-icons">&#xE5D2;</i>
+		</md-button>
+		<md-menu-content width="4">
+			<md-menu-item>
+				<md-button ng-click="">
+					<i class="material-icons">&#xE8F1;</i>
+					Random Grid List
+				</md-button>
+			</md-menu-item>
+			<!--<md-menu-item>-->
+				<!--<md-button ng-click="">-->
+					<!--<i class="material-icons">&#xE3C9;</i>-->
+					<!--TODOs-->
+				<!--</md-button>-->
+			<!--</md-menu-item>-->
+		</md-menu-content>
+	</md-menu>
+	<h1 class="title md-toolbar-tools">trying out angular material</h1>
+	<span flex></span>
+
+</md-toolbar>
+<md-subheader class="md-primary">Click a Tile to change its color.</md-subheader>
+
+<div ui-view></div>
+
+
+<script type="text/javascript" src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script type="text/javascript" src="bower_link/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_link/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="bower_link/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="bower_link/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="bower_link/angular-material/angular-material.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/services/dataService.js"></script>
+<script type="text/javascript" src="scripts/controllers/menuController.js"></script>
+<script type="text/javascript" src="scripts/controllers/gridListController.js"></script>
+<script type="text/javascript" src="scripts/controllers/todoController.js"></script>
+
+</body>
+</html>
