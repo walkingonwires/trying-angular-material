@@ -17,6 +17,7 @@ install bower packages
 **IMPORTANT - from the app folder create sym link to bower_components**
 
 > cd app/
+
 > ln -s ../bower_components/ bower_link
 
 to run call 
