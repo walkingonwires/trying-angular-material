@@ -3,3 +3,5 @@ bower_components/
 node_modules/
 .idea/
 app/bower_link/
+app/.DS_Store
+app/bower_link
