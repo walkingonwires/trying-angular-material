@@ -14,7 +14,7 @@ install bower packages
 
 > bower install
 
-**IMPORTANT - from the root folder create sym link to bower_components**
+**IMPORTANT - from the app folder create sym link to bower_components**
 
 > cd app/
 > ln -s ../bower_components/ bower_link
